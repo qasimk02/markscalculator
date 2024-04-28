@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subject List with Correct/Incorrect Counts</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Subject List</h1>
+      <div>
+        <input type="text" id="subjectInput" placeholder="Enter subject name" />
+        <button onclick="addSubject()">Add Subject</button>
+      </div>
+      <table id="subjectTable">
+        <thead>
+          <tr>
+            <th>Subject</th>
+            <th>Action</th>
+            <th>Correct</th>
+            <th>Incorrect</th>
+          </tr>
+        </thead>
+        <tbody id="subjectBody"></tbody>
+      </table>
+      <div class="mt-5">
+        <button onclick="generateReport()">Generate Report</button>
+        <button onclick="closeReport()">Close Report</button>
+      </div>
+    </div>
+
+    <div id="reportContainer" class="show-report container mt-5">
+      <h1>Report</h1>
+      <table id="reportTable">
+        <thead>
+          <tr>
+            <th>Subject</th>
+            <th>Correct</th>
+            <th>Incorrect</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody id="reportBody"></tbody>
+      </table>
+    </div>
+
+    <!-- Loader-->
+    <div id="loader" class="loader-container">
+      <!-- Loader animation -->
+      <div class="loader"></div>
+      <!-- Text message -->
+      <div class="loader-text">Generating Report...</div>
+    </div>
+
+    <audio id="plusSound">
+      <source src="audio/plusSound.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio id="minusSound">
+      <source src="audio/minusSound.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio id="reportClosedSound">
+      <source src="audio/reportClosed.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio id="reportGeneratingSound">
+      <source src="audio/reportGenerating.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio id="reportGeneratedSound">
+      <source src="audio/reportGenerated.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio id="subjectAddedSound">
+      <source src="audio/subjectAdded.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
