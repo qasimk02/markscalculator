@@ -6,6 +6,7 @@ Marks Calculator is a web application that allows users to manage a list of subj
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
+- [Contributing](#contributing)
 
 ## Installation
 
@@ -54,6 +55,19 @@ The project repository contains the following files and directories:
 - `script.js`: JavaScript file containing application logic.
 - `audio/`: Directory containing sound files used in the application.
 - `README.md`: This file, providing project information and usage instructions.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+
+1. Fork the repository on GitHub.
+2. Clone your forked repository (`git clone https://github.com/your-username/markscalculator.git`).
+3. Create a new branch for your feature or bug fix (`git checkout -b feature-or-fix-name`).
+4. Make your changes and commit them (`git commit -am 'Add new feature'`).
+5. Push your changes to the branch on your forked repository (`git push origin feature-or-fix-name`).
+6. Submit a pull request on GitHub.
+
+Please ensure your pull request follows our guidelines. We appreciate your contributions!
 
 ---
 
